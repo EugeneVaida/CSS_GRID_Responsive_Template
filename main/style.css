@@ -1,0 +1,98 @@
+.topLogo {
+    grid-area: topLogo;
+}
+
+.menuBar {
+    grid-area: menuBar;
+}
+
+.mainLogo {
+    grid-area: mainLogo;
+}
+
+.aditional {
+    grid-area: aditional;
+}
+
+.head {
+    position: relative;
+    background-image: url(img/Photo.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.head-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-template-rows: 60px 1fr 80px 30px;
+    grid-template-areas:
+        "topLogo menuBar menuBar" 
+        "mainLogo mainLogo mainLogo" 
+        "aditional aditional aditional";
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80) black;
+    -khtml-opacity: 0.8;
+    background-color: #000;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.content{
+    position: relative;
+    top: -70px;
+}
+
+.card{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 250px;
+}
+
+.grid {
+    display: grid;
+    margin: 0 auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); 
+    justify-content: center;
+}
+
+
+.grid div {
+    align-content: center;
+    border: 3px dashed rgba(103, 182, 81, 0.637);
+}
+
+.head div:nth-child(1) {
+
+    right: 0px;
+}
+
+.head div:nth-child(2) {
+
+    right: 0px;
+}
+
+.head div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1fr;
+}
+
+.head div:nth-child(4) {
+    margin: 0 auto;
+}
+
+/* .grid div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+} */
