@@ -18,7 +18,34 @@
     position: relative;
     background-image: url(img/Photo.png);
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
+}
+
+input[type=text] {
+    width: 100%;
+    font-size: 16px;
+    background: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 40px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 40px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: minmax(300px, 0.5fr);
+    margin: 50px;
+    justify-content: center;
 }
 
 .head-content {
@@ -35,7 +62,7 @@
     -khtml-opacity: 0.8;
     background-color: #000;
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     color: white;
 }
@@ -50,8 +77,8 @@ body {
 }
 
 .card{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1px;   
+    background-color: white; 
     height: 250px;
 }
 
@@ -60,14 +87,14 @@ body {
     margin: 0 auto;
     grid-column-gap: 50px;
     grid-row-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     justify-content: center;
 }
 
 
 .grid div {
     align-content: center;
-    border: 3px dashed rgba(103, 182, 81, 0.637);
+    border: 1px solid rgba(153, 153, 153, 0.637);
 }
 
 .head div:nth-child(1) {
