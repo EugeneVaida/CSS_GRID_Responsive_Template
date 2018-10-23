@@ -21,6 +21,14 @@
     height: 90vh;
 }
 
+.place-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+
 input[type=text] {
     width: 100%;
     font-size: 16px;
@@ -76,7 +84,17 @@ body {
     top: -70px;
 }
 
+.places{
+    position: relative;
+}
+
 .card{
+    border-radius: 1px;   
+    background-color: white; 
+    height: 250px;
+}
+
+.place-card{
     border-radius: 1px;   
     background-color: white; 
     height: 250px;
@@ -93,6 +111,11 @@ body {
 
 
 .grid div {
+    align-content: center;
+    border: 1px solid rgba(153, 153, 153, 0.637);
+}
+
+.place-grid div {
     align-content: center;
     border: 1px solid rgba(153, 153, 153, 0.637);
 }
