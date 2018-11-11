@@ -29,6 +29,7 @@
 }
 
 
+
 .place-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
@@ -68,7 +69,7 @@ input[type=text]:focus {
 .head-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: 1fr 5fr 1fr 1fr;
+    grid-template-rows: 80px 5fr 1fr 1fr;
     grid-template-areas:
         "topLogo menuBar menuBar"
         "mainLogo mainLogo mainLogo"
@@ -81,6 +82,35 @@ input[type=text]:focus {
 
 
 }
+
+.img1{
+    background-image: url('img/category_1.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;    
+}
+
+
+.zakopane{
+    background-image: url('img/category_2.jpg');
+    background-size: cover;
+}
+
+.sandomirz{
+    background-image: url('img/category_3.jpg');
+    background-size: cover;
+}
+
+.sopot{
+    background-image: url('img/category_4.jpg');
+    background-size: cover;
+}
+
+.img2{
+    background-image: url('img/category_5.jpg');
+    background-size: cover;
+}
+
 
 .container {
     position: relative;
@@ -122,10 +152,24 @@ body {
     position: relative;
 }
 
-.card {
+.card {    
     border-radius: 1px;
-    background-color: white;
-    height: 250px;
+    background-color: white; 
+    position: relative;
+    height: 400px;
+}
+
+.card > h4{    
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.card > p{
+    color: yellow;
+    font-size: 24;
 }
 
 .exploreCard img {
@@ -196,6 +240,26 @@ body {
     grid-template-areas:
         ". eH eH eH eH eH eH eH eH eH eH ."
         ". eL eL eL eL eL eR eR eR eR eR .";
+}
+
+.headLogoName{
+    float: left;
+    position: relative;
+    font-weight: 900;
+    vertical-align: middle;
+    font-size: 2em;
+    height: 30px;
+    width: 100px;
+    margin-left: 0;
+    padding: 0.6em 0 0 1em;
+}
+
+.logo{    
+    float:left;
+}
+
+.logo > img{
+    width: 100%
 }
 
 
