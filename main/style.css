@@ -14,14 +14,22 @@
     grid-area: aditional;
 }
 
-.head {
-    position: relative;
-    background-image: url(img/Photo.png);
-    background-size: cover;
-    height: 90vh;
+.exploreHead {
+    grid-area: eH;
 }
 
-.place-grid{
+.exploreLeft {
+    grid-area: eL;
+    padding: 20px;
+}
+
+.exploreRight {
+    grid-area: eR;
+    padding: 20px;
+}
+
+
+.place-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
     grid-column-gap: 50px;
@@ -33,7 +41,7 @@ input[type=text] {
     width: 100%;
     font-size: 16px;
     background: url('https://www.w3schools.com/css/searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 40px;
     margin: 8px 0;
@@ -49,54 +57,85 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 
-.search{
+.search {
     display: grid;
     grid-template-columns: minmax(300px, 0.5fr);
     margin: 50px;
     justify-content: center;
 }
 
+
 .head-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    grid-template-rows: 60px 1fr 80px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1fr 5fr 1fr 1fr;
     grid-template-areas:
-        "topLogo menuBar menuBar" 
-        "mainLogo mainLogo mainLogo" 
+        "topLogo menuBar menuBar"
+        "mainLogo mainLogo mainLogo"
         "aditional aditional aditional";
-    opacity: 0.8;
-    -moz-opacity: 0.8;
-    filter: alpha(opacity=80) black;
-    -khtml-opacity: 0.8;
-    background-color: #000;
-    position: absolute;
-    height: 90vh;
+    
     width: 100%;
-    color: white;
+    height: 100%;
+    /* color: white; */
+    color: rgb(255, 255, 255);  
+
+
+}
+
+.container {
+    position: relative;
+}
+
+.darkened {
+    background: url('img/header.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.darkened::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
 }
 
 body {
     margin: 0;
 }
 
-.content{
+.content {
     position: relative;
     top: -70px;
 }
 
-.places{
+.places {
     position: relative;
 }
 
-.card{
-    border-radius: 1px;   
-    background-color: white; 
+.explore {
+    position: relative;
+}
+
+.card {
+    border-radius: 1px;
+    background-color: white;
     height: 250px;
 }
 
-.place-card{
-    border-radius: 1px;   
-    background-color: white; 
+.exploreCard img {
+    width: 75%;
+    height: auto;
+}
+
+.place-card {
+    border-radius: 1px;
+    background-color: white;
     height: 250px;
 }
 
@@ -105,7 +144,7 @@ body {
     margin: 0 auto;
     grid-column-gap: 50px;
     grid-row-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
 }
 
@@ -121,8 +160,7 @@ body {
 }
 
 .head div:nth-child(1) {
-
-    right: 0px;
+    left: 0px;
 }
 
 .head div:nth-child(2) {
@@ -137,12 +175,48 @@ body {
     height: 1fr;
 }
 
-.head div:nth-child(4) {
-    margin: 0 auto;
-}
 
 /* .grid div:nth-child(1){
     grid-column-start: 1;
     grid-column-end: 5;
 
 } */
+
+.explore {
+    padding-top: 40px;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        ". eH eH eH eH eH eH eH eH eH eH ."
+        ". eL eL eL eL eL eR eR eR eR eR .";
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .head-content {
+        grid-template-areas:
+            "topLogo topLogo topLogo"
+            "menuBar menuBar menuBar"
+            "mainLogo mainLogo mainLogo"
+            "aditional aditional aditional";
+    }
+
+    .explore-grid {
+        grid-template-areas:
+            "expHead expHead"
+            "expLeft expLeft"
+            "expRight expRight";
+    }
+
+    .content {
+        top: -10px;
+    }
+}
