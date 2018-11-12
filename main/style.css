@@ -22,11 +22,77 @@ body {
 
 .exploreHead {
     grid-area: eH;
+
+}
+
+.explore {
+    background-color: #f8f9fb;
+}
+
+.exploreHead h2 {
+    margin: 10px 0 40px 0px;
+    font-weight: 900;
+    color: #606f81;
+    font-size: 36px;
 }
 
 .exploreLeft {
     grid-area: eL;
-    padding: 20px;
+    padding: 40px;
+}
+
+.exploreLeft h3 {
+    color: #ffc74a;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.exploreCard {
+    box-shadow: 20 20 40px #ffc74a;
+}
+
+.footer {
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+    background-image: url('img/footer.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+.footer div {
+
+    display: flex;
+    justify-content: center;
+}
+
+.firstFooterHead {
+    padding-top: 15vh;
+    padding-bottom: 20px;
+}
+
+.footer h2 {
+    font-weight: 900;
+    font-size: 62px;
+    color: #fcfcfd;
+}
+
+.footer p {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fcfcfd;
+}
+
+.footer p > span {
+    font-weight: 900;
+    font-size: 14px;
+    color: #ffc74a;
+    text-decoration: underline;
+}
+
+.thirdHead{
+    padding-top: 20px;
 }
 
 .exploreRight {
@@ -38,8 +104,21 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
     grid-column-gap: 50px;
-    grid-row-gap: 30px;
+    grid-row-gap: 60px;
     justify-content: center;
+    margin-bottom: 30px;
+}
+
+.searchIcon{
+    color: #ffc74a;
+}
+
+.searchHead{
+    text-align: center;
+    padding: 40px;
+    font-weight: 900;
+    font-size: 48px;
+
 }
 
 input[type=text] {
@@ -79,29 +158,30 @@ ul.hr li {
     font-weight: 500;
 }
 
-.stheading{
+.stheading {
     font-size: 72px;
     font-weight: 900;
     text-align: center;
 }
 
-.stheading span{
+.stheading span {
     font-size: 72px;
     font-weight: 900;
     text-align: center;
     color: #ed6950;
 }
 
-.subheading{
+.subheading {
     text-align: center;
     color: #5c5d5d;
     font-weight: 900;
     padding-top: 25px;
 }
 
-.mainButton{
-    background-color: #ffc74a; 
-    border-color: transparent;/* Green */
+.mainButton {
+    background-color: #ffc74a;
+    border-color: transparent;
+    /* Green */
     border-radius: 15px;
     color: #b98000;
     padding: 5px 15px;
@@ -111,9 +191,10 @@ ul.hr li {
     font-size: 16px;
 }
 
-.cardButton{
-    background-color: #ffc74a; 
-    border-color: transparent;/* Green */
+.cardButton {
+    background-color: #ffc74a;
+    border-color: transparent;
+    /* Green */
     border-radius: 15px;
     color: #fcfcfd;
     padding: 5px 15px;
@@ -123,9 +204,10 @@ ul.hr li {
     font-size: 16px;
 }
 
-.cardButtonGrey{
-    background-color: #bdc8d9; 
-    border-color: transparent;/* Green */
+.cardButtonGrey {
+    background-color: #bdc8d9;
+    border-color: transparent;
+    /* Green */
     border-radius: 15px;
     color: #fcfcfd;
     padding: 5px 15px;
@@ -135,8 +217,8 @@ ul.hr li {
     font-size: 16px;
 }
 
-.spanButtonTrans{
-    background-color: transparent; 
+.spanButtonTrans {
+    background-color: transparent;
     border: 2px solid #bdc8d9;
     border-radius: 15px;
     color: #bdc8d9;
@@ -148,9 +230,10 @@ ul.hr li {
     font-size: 16px;
 }
 
-.spanButton{
-    background-color: transparent; 
-    border-color: transparent;/* Green */
+.spanButton {
+    background-color: transparent;
+    border-color: transparent;
+    /* Green */
     border-radius: 15px;
     color: #ffffff;
     padding: 5px 15px;
@@ -160,14 +243,14 @@ ul.hr li {
     font-size: 16px;
 }
 
-.spans{
+.spans {
     display: flex;
     justify-content: space-between;
 }
 
 
 
-.aditional{
+.aditional {
     text-align: center;
     display: flex;
     padding-bottom: 20px;
@@ -205,7 +288,7 @@ ul.hr li {
     background-image: url('img/category_1.jpg');
     background-size: cover;
     text-align: center;
-    color:#fcfcfd;
+    color: #fcfcfd;
 }
 
 
@@ -292,7 +375,7 @@ ul.hr li {
     text-align: center;
 }
 
-.cardText{
+.cardText {
     align-self: flex-end;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -301,9 +384,12 @@ ul.hr li {
 .exploreCard img {
     width: 75%;
     height: auto;
+    -webkit-box-shadow: 35px 24px 0px 2px rgba(255, 198, 74, 1);
+    -moz-box-shadow: 35px 24px 0px 2px rgba(255, 198, 74, 1);
+    box-shadow: 35px 24px 0px 2px rgba(255, 198, 74, 1);
 }
 
-.place-card { 
+.place-card {
     border-radius: 5px;
     padding: 5px;
     background-color: white;
@@ -311,27 +397,27 @@ ul.hr li {
 
 }
 
-.textBlock{
+.textBlock {
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    
+
 }
 
-.textBlock h4{
+.textBlock h4 {
     font-size: 36px;
     font-weight: 900;
-    color: #606f81;    
+    color: #606f81;
 }
 
-.textBlock p{
+.textBlock p {
     font-size: 16px;
     font-weight: 500;
-    color: #606f81;  
-    padding-bottom: 10px;  
+    color: #606f81;
+    padding-bottom: 10px;
 }
 
-.buttonBlock{
+.buttonBlock {
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -416,9 +502,34 @@ ul.hr li {
     width: 100%
 }
 
+.rights{
+    height: 30vh;
+}
+
+.logoRights{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;  
+}
+
+.textRights{
+    padding-top: 20px;
+    font-size: 24px;
+    color: #606f81;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
 
 
 @media screen and (max-width: 700px) {
+
+    .footer h2 {
+        font-size: 48px;
+    }
+
     .head-content {
         grid-template-areas:
             "topLogo topLogo topLogo"
@@ -428,11 +539,19 @@ ul.hr li {
     }
 
     .explore-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+        justify-content: center;
+        justify-items: center;
         grid-template-areas:
-            "expHead expHead"
-            "expLeft expLeft"
-            "expRight expRight";
+            ". eH eH eH eH eH eH eH eH eH eH ."
+            ". eL eL eL eL eL eL eL eL eL eL ."
+            ". eR eR eR eR eR eR eR eR eR eR .";
     }
+
+
 
     .content {
         top: -10px;
