@@ -1,0 +1,5 @@
+yellow - ffc74a
+dark yellow - b98000
+red-orane-salmon - ed6950
+grey - 5c5d5d
+white - fcfcfd

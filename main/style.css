@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafbfb
+}
+
 .topLogo {
     grid-area: topLogo;
 }
@@ -28,8 +34,6 @@
     padding: 20px;
 }
 
-
-
 .place-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
@@ -58,11 +62,125 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 
+ul.hr {
+    margin: 0;
+    /* Обнуляем значение отступов */
+    padding: 30px 30px 0 0;
+    /* Значение полей */
+}
+
+ul.hr li {
+    display: inline;
+    /* Отображать как строчный элемент */
+    margin-right: 25px;
+    /* Отступ слева */
+    padding: 3px;
+    /* Поля вокруг текста */
+    font-weight: 500;
+}
+
+.stheading{
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.stheading span{
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+    color: #ed6950;
+}
+
+.subheading{
+    text-align: center;
+    color: #5c5d5d;
+    font-weight: 900;
+    padding-top: 25px;
+}
+
+.mainButton{
+    background-color: #ffc74a; 
+    border-color: transparent;/* Green */
+    border-radius: 15px;
+    color: #b98000;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cardButton{
+    background-color: #ffc74a; 
+    border-color: transparent;/* Green */
+    border-radius: 15px;
+    color: #fcfcfd;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cardButtonGrey{
+    background-color: #bdc8d9; 
+    border-color: transparent;/* Green */
+    border-radius: 15px;
+    color: #fcfcfd;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.spanButtonTrans{
+    background-color: transparent; 
+    border: 2px solid #bdc8d9;
+    border-radius: 15px;
+    color: #bdc8d9;
+    font-weight: 500;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.spanButton{
+    background-color: transparent; 
+    border-color: transparent;/* Green */
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.spans{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.aditional{
+    text-align: center;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-self: flex-end
+}
+
 .search {
     display: grid;
-    grid-template-columns: minmax(300px, 0.5fr);
+    grid-template-columns: minmax(300px, 0.8fr);
     margin: 50px;
     justify-content: center;
+    color: #555;
 }
 
 
@@ -74,39 +192,39 @@ input[type=text]:focus {
         "topLogo menuBar menuBar"
         "mainLogo mainLogo mainLogo"
         "aditional aditional aditional";
-    
+
     width: 100%;
     height: 100%;
-    /* color: white; */
-    color: rgb(255, 255, 255);  
+    position: absolute;
+    color: #fcfcfd;
 
 
 }
 
-.img1{
+.img1 {
     background-image: url('img/category_1.jpg');
     background-size: cover;
     text-align: center;
-    color: white;    
+    color:#fcfcfd;
 }
 
 
-.zakopane{
+.zakopane {
     background-image: url('img/category_2.jpg');
     background-size: cover;
 }
 
-.sandomirz{
+.sandomirz {
     background-image: url('img/category_3.jpg');
     background-size: cover;
 }
 
-.sopot{
+.sopot {
     background-image: url('img/category_4.jpg');
     background-size: cover;
 }
 
-.img2{
+.img2 {
     background-image: url('img/category_5.jpg');
     background-size: cover;
 }
@@ -131,13 +249,10 @@ input[type=text]:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
 
-body {
-    margin: 0;
-}
 
 .content {
     position: relative;
@@ -152,24 +267,35 @@ body {
     position: relative;
 }
 
-.card {    
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 1px;
-    background-color: white; 
+    background-color: #fcfcfd;
     position: relative;
     height: 400px;
 }
 
-.card > h4{    
-    color: white;
+.card h4 {
+    color: #fcfcfd;
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     position: relative;
 }
 
-.card > p{
-    color: yellow;
-    font-size: 24;
+.card p {
+    color: #ffc74a;
+    font-size: 14;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cardText{
+    align-self: flex-end;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .exploreCard img {
@@ -177,10 +303,39 @@ body {
     height: auto;
 }
 
-.place-card {
-    border-radius: 1px;
+.place-card { 
+    border-radius: 5px;
+    padding: 5px;
     background-color: white;
-    height: 250px;
+    height: 270px;
+
+}
+
+.textBlock{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+
+.textBlock h4{
+    font-size: 36px;
+    font-weight: 900;
+    color: #606f81;    
+}
+
+.textBlock p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #606f81;  
+    padding-bottom: 10px;  
+}
+
+.buttonBlock{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding-bottom: 20px;
 }
 
 .grid {
@@ -195,12 +350,10 @@ body {
 
 .grid div {
     align-content: center;
-    border: 1px solid rgba(153, 153, 153, 0.637);
 }
 
 .place-grid div {
     align-content: center;
-    border: 1px solid rgba(153, 153, 153, 0.637);
 }
 
 .head div:nth-child(1) {
@@ -242,7 +395,7 @@ body {
         ". eL eL eL eL eL eR eR eR eR eR .";
 }
 
-.headLogoName{
+.headLogoName {
     float: left;
     position: relative;
     font-weight: 900;
@@ -251,14 +404,15 @@ body {
     height: 30px;
     width: 100px;
     margin-left: 0;
-    padding: 0.6em 0 0 1em;
+    padding: 0.7em 0 0 1em;
 }
 
-.logo{    
-    float:left;
+.logo {
+    float: left;
+    padding: 10px 0 0 10px;
 }
 
-.logo > img{
+.logo>img {
     width: 100%
 }
 
