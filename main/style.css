@@ -44,8 +44,12 @@ body {
 .exploreLeft h3 {
     color: #ffc74a;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     padding: 10px 0 10px 0;
+}
+
+.exploreLeft p{
+    padding-top: 20px;
 }
 
 .exploreCard {
@@ -121,24 +125,39 @@ body {
 
 }
 
+.searchBox{
+    border: 1px solid #bdc8d9;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-content: space-around;
+    margin: 20px 0 10px 0;
+}
+
+.searchBox i {
+    vertical-align: -webkit-baseline-middle;
+    color: #ffc74a;
+    font-size: 24px;
+}
+
 input[type=text] {
+    margin: 5px;
     width: 100%;
     font-size: 16px;
-    background: url('https://www.w3schools.com/css/searchicon.png');
-    background-position: 10px 10px;
+    /* background: url('https://www.w3schools.com/css/searchicon.png'); */
+    /* background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 40px;
     margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    border-radius: 40px;
+    box-sizing: border-box; */
+    border-color: transparent;
+    background-color: transparent;    
 }
 
+
 input[type=text]:focus {
-    border: 3px solid #555;
+    outline: none;
 }
 
 ul.hr {
@@ -219,7 +238,7 @@ ul.hr li {
 
 .spanButtonTrans {
     background-color: transparent;
-    border: 2px solid #bdc8d9;
+    border: 1.5px solid #bdc8d9;
     border-radius: 15px;
     color: #bdc8d9;
     font-weight: 500;
@@ -260,7 +279,7 @@ ul.hr li {
 
 .search {
     display: grid;
-    grid-template-columns: minmax(300px, 0.8fr);
+    grid-template-columns: minmax(300px, 0.6fr);
     margin: 50px;
     justify-content: center;
     color: #555;
