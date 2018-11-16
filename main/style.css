@@ -26,7 +26,10 @@ body {
 }
 
 .explore {
-    background-color: #f8f9fb;
+    position: relative;
+    z-index: -2;
+    padding-bottom: 30px;
+    background: linear-gradient(45deg, #fff, #e2e2e246)
 }
 
 .exploreHead h2 {
@@ -48,7 +51,7 @@ body {
     padding: 10px 0 10px 0;
 }
 
-.exploreLeft p{
+.exploreLeft p {
     padding-top: 20px;
 }
 
@@ -56,8 +59,26 @@ body {
     box-shadow: 20 20 40px #ffc74a;
 }
 
+.backPattern {
+    position: absolute;
+    z-index: -1;
+    align-items: flex-end;
+    flex-direction: row;
+    right: 0;
+    align-self: flex-end;
+    font-size: 12em;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.backPattern > div {
+    text-align: right;
+    padding: 0;
+    height: auto;
+}
+
 .footer {
-    margin-top: 30px;
     align-items: center;
     width: 100%;
     background-image: url('img/footer.jpg');
@@ -88,14 +109,14 @@ body {
     color: #fcfcfd;
 }
 
-.footer p > span {
+.footer p>span {
     font-weight: 900;
     font-size: 14px;
     color: #ffc74a;
     text-decoration: underline;
 }
 
-.thirdHead{
+.thirdHead {
     padding-top: 20px;
 }
 
@@ -113,11 +134,11 @@ body {
     margin-bottom: 30px;
 }
 
-.searchIcon{
+.searchIcon {
     color: #ffc74a;
 }
 
-.searchHead{
+.searchHead {
     text-align: center;
     padding: 40px;
     font-weight: 900;
@@ -125,7 +146,7 @@ body {
 
 }
 
-.searchBox{
+.searchBox {
     border: 1px solid #bdc8d9;
     padding: 5px;
     border-radius: 20px;
@@ -152,7 +173,7 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box; */
     border-color: transparent;
-    background-color: transparent;    
+    background-color: transparent;
 }
 
 
@@ -203,7 +224,7 @@ ul.hr li {
     /* Green */
     border-radius: 15px;
     color: #b98000;
-    padding: 5px 15px;
+    padding: 8px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -247,6 +268,8 @@ ul.hr li {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    float: right;
+    margin-right: 5px;
 }
 
 .spanButton {
@@ -283,6 +306,10 @@ ul.hr li {
     margin: 50px;
     justify-content: center;
     color: #555;
+}
+
+.search button{
+    margin-top: 5px;
 }
 
 
@@ -521,17 +548,17 @@ ul.hr li {
     width: 100%
 }
 
-.rights{
+.rights {
     height: 30vh;
 }
 
-.logoRights{
+.logoRights {
     padding-top: 50px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
-.textRights{
+.textRights {
     padding-top: 20px;
     font-size: 24px;
     color: #606f81;
